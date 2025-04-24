@@ -1,72 +1,82 @@
-Clinical Trial Knowledge Graph
+# Clinical Trial Knowledge Graph
 
-This full-stack application visualizes and analyzes clinical trial data. Built with Spring Boot, Neo4j, Angular, and Chart.js, it allows users to explore relationships between conditions and trial phases through a dynamic knowledge graph, charts, and an interactive dashboard.
+A full-stack web application to explore and analyze clinical trial data using a dynamic knowledge graph, interactive charts, and a real-time analytics dashboard. Built with Spring Boot, Neo4j, Angular, and Chart.js.
 
-Features:
+---
 
-📋 Load and display clinical trial data from a Spring Boot API backed by a Neo4j database
+## Features
 
-🔍 Filter trials by phase, condition, or keyword search
+- Load and display clinical trial data from a Spring Boot API backed by a Neo4j database
+- Filter trials by phase, condition, or keyword search
+- View interactive bar and pie charts showing trial distributions
+- Real-time analytics dashboard showing total trials, most common phase, and most common condition
+- Dark mode with dynamic styling for charts and components
+- Sample data fallback when API is unavailable
+- CSV export functionality (in progress)
 
-📊 View interactive bar and pie charts showing trial distributions
+---
 
-📈 See real-time analytics with an on-page dashboard (most common phase, condition, totals)
+## Technologies Used
 
-🌗 Dark mode support with dynamic chart color adjustment
+### Frontend
+- Angular 17 (standalone components)
+- Chart.js for visualizations
+- TypeScript
+- CSS (custom dark theme)
 
-🧪 Sample data for offline use when the API is unavailable
+### Backend
+- Spring Boot (Java)
+- Neo4j Graph Database
+- Spring Data Neo4j
 
-📤 Optional CSV export functionality (in progress)
+### Development Tools
+- Postman (API testing)
+- VS Code
 
-Technologies Used:
+---
+## How to Run the Application
 
-Frontend
+### Step 1: Clone the Repository
 
-Angular 17 (standalone components)
+```bash
+git clone https://github.com/your-username/clinical-trial-knowledge-graph.git
+cd clinical-trial-knowledge-graph
 
-Chart.js for data visualization
+### Step 2: Start the Backend (Spring Boot)
+Open a terminal and navigate into the demo directory:
 
-TypeScript
-
-CSS (custom dark theme)
-
-Backend
-
-Spring Boot (Java)
-
-Neo4j (graph database)
-
-Spring Data Neo4j
-
-Dev Tools
-
-Postman (API testing)
-
-VS Code
-
-How to Run
-1. Clone the Repo:
-
-bash
-Copy code
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-2. Start the Backend (Spring Boot):
-
-bash
-Copy code
+```bash
 cd demo
+
+Start the Spring Boot application:
+
+```bash
 ./mvnw spring-boot:run
-Make sure your Neo4j database is running locally (or connected remotely).
+Note: Ensure your local Neo4j database is running and listening on bolt://localhost:7687
 
-3. Start the Frontend (Angular): 
+### Step 3: Start the Frontend (Angular)
+In a new terminal, navigate into the frontend directory:
 
-bash
-Copy code
+```bash
 cd clinical-graph-ui
+
+Install the dependencies:
+
+```bash
 npm install
+
+Start the Angular development server:
+
+```bash
 ng serve
 
-Visit http://localhost:4200/ in your browser.
+Once the server starts, open your browser and go to: http://localhost:4200
+
+Sample Data
+If the Neo4j database is unavailable, the app will automatically fall back to a predefined set of sample clinical trial data for testing purposes.
+
+
+
+
+
 
