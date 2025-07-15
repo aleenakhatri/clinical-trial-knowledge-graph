@@ -64,9 +64,7 @@ ng serve
 
 *Screenshots coming soon to showcase the dashboard, filters, and interactive charts.*
 
-<img width="1509" height="859" alt="Screenshot 2025-07-15 at 11 23 20 AM" src="https://github.com/user-attachments/assets/8e9c857f-6763-47f1-b146-07ecac736ed8" />
-<img width="1507" height="863" alt="Screenshot 2025-07-15 at 11 23 43 AM" src="https://github.com/user-attachments/assets/52e11be9-dea3-43d7-a26c-7d7d3ae8dd47" />
-<img width="1512" height="857" alt="Screenshot 2025-07-15 at 11 24 06 AM" src="https://github.com/user-attachments/assets/60a89b17-cdc3-4c9d-afb7-7d3d5b9c86d3" />
+
 
 
 
