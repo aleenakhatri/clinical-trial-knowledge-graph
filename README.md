@@ -1,82 +1,86 @@
 # Clinical Trial Knowledge Graph
 
-A full-stack web application to explore and analyze clinical trial data using a dynamic knowledge graph, interactive charts, and a real-time analytics dashboard. Built with Spring Boot, Neo4j, Angular, and Chart.js.
+A full-stack web application to explore and analyze clinical trial data with interactive graphs, dynamic charts, and a real-time analytics dashboard. Built using **Spring Boot**, **Neo4j**, **Angular**, and **Chart.js**.
 
 ---
 
 ## Features
 
-- Load and display clinical trial data from a Spring Boot API backed by a Neo4j database
+- Load and visualize clinical trial data from a Spring Boot API connected to a Neo4j graph database
 - Filter trials by phase, condition, or keyword search
-- View interactive bar and pie charts showing trial distributions
-- Real-time analytics dashboard showing total trials, most common phase, and most common condition
-- Dark mode with dynamic styling for charts and components
-- Sample data fallback when API is unavailable
-- CSV export functionality (in progress)
+- Interactive bar and pie charts showing trial distributions
+- Real-time analytics dashboard with total trials, most common phase/condition
+- Dark mode with dynamic styling
+- CSV export functionality *(in progress)*
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-### Frontend
-- Angular 17 (standalone components)
-- Chart.js for visualizations
-- TypeScript
-- CSS (custom dark theme)
-
-### Backend
-- Spring Boot (Java)
-- Neo4j Graph Database
-- Spring Data Neo4j
-
-### Development Tools
-- Postman (API testing)
-- VS Code
+- **Frontend:** Angular 17 (standalone components), Chart.js, TypeScript, CSS (custom dark theme)
+- **Backend:** Spring Boot (Java), Neo4j Graph Database, Spring Data Neo4j
+- **Tools:** Postman, VS Code
 
 ---
-## How to Run the Application
 
-### Step 1: Clone the Repository
+## Neo4j Requirement
 
-```bash
-git clone https://github.com/your-username/clinical-trial-knowledge-graph.git
+**Note:** This app requires a local Neo4j database to function fully.  
+You must have Neo4j running at `bolt://localhost:7687` for the API to return clinical trial data.  
+If Neo4j is not running, the frontend will not display data.
+
+**Setting up Neo4j locally:**
+1. Install Neo4j Desktop or use Docker
+2. Start a local database at `bolt://localhost:7687`
+3. Use default credentials (`neo4j` / `password`) or update `application.properties` as needed
+
+---
+
+## Getting Started
+
+Follow these steps to run the application locally:
+
+git clone https://github.com/[your-username]/clinical-trial-knowledge-graph.git
 cd clinical-trial-knowledge-graph
 
-### Step 2: Start the Backend (Spring Boot)
-Open a terminal and navigate into the demo directory:
+**Start the Backend (Spring Boot)**
 
-```bash
 cd demo
-
-Start the Spring Boot application:
-
-```bash
 ./mvnw spring-boot:run
-Note: Ensure your local Neo4j database is running and listening on bolt://localhost:7687
 
-### Step 3: Start the Frontend (Angular)
-In a new terminal, navigate into the frontend directory:
+**Requires Java 17+**
 
-```bash
+**Ensure Neo4j is running locally**
+
+**Start the Frontend (Angular)**
+
 cd clinical-graph-ui
-
-Install the dependencies:
-
-```bash
 npm install
-
-Start the Angular development server:
-
-```bash
 ng serve
 
-Once the server starts, open your browser and go to: http://localhost:4200
+**Open in your browser at http://localhost:4200**
 
-Sample Data
-If the Neo4j database is unavailable, the app will automatically fall back to a predefined set of sample clinical trial data for testing purposes.
+## Screenshots
+
+*Screenshots coming soon to showcase the dashboard, filters, and interactive charts.*
+
+<img width="1509" height="859" alt="Screenshot 2025-07-15 at 11 23 20 AM" src="https://github.com/user-attachments/assets/8e9c857f-6763-47f1-b146-07ecac736ed8" />
+<img width="1507" height="863" alt="Screenshot 2025-07-15 at 11 23 43 AM" src="https://github.com/user-attachments/assets/52e11be9-dea3-43d7-a26c-7d7d3ae8dd47" />
+<img width="1512" height="857" alt="Screenshot 2025-07-15 at 11 24 06 AM" src="https://github.com/user-attachments/assets/60a89b17-cdc3-4c9d-afb7-7d3d5b9c86d3" />
 
 
 
+## Video Demo
+
+*A short demo video link will be available here.*
 
 
+## Author
+
+Aleena Khatri
+
+
+## License
+
+MIT
 
